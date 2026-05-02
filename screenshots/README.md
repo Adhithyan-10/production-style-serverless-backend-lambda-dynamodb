@@ -10,8 +10,6 @@ These screenshots document the hands-on workflow followed while building the ser
 
 ## Screenshot 1 — DynamoDB Table Created
 
-![Screenshot 1 — DynamoDB Table Created](./Screenshot%201%20%E2%80%94%20DynamoDB%20Table%20Created\(1\).png)
-
 This screenshot shows the DynamoDB table created for storing user records in the serverless backend application.
 
 ### Key Details
@@ -31,8 +29,6 @@ This screenshot shows the DynamoDB table created for storing user records in the
 ---
 
 ## Screenshot 2 — Lambda Function Overview
-
-![Screenshot 2 — Lambda Function Overview](./Screenshot%202%20%E2%80%94%20Lambda%20Function%20Overview\(1\).png)
 
 This screenshot shows the AWS Lambda function configured as the backend compute service for the project.
 
@@ -54,8 +50,6 @@ This screenshot shows the AWS Lambda function configured as the backend compute 
 
 ## Screenshot 3 — Lambda Test Success
 
-![Screenshot 3 — Lambda Test Success](./Screenshot%203%20%E2%80%94%20Lambda%20Test%20Success\(1\).png)
-
 This screenshot shows successful execution of the Lambda function during testing.
 
 ### Key Details
@@ -75,8 +69,6 @@ This screenshot shows successful execution of the Lambda function during testing
 ---
 
 ## Screenshot 4 — Item Visible in DynamoDB
-
-![Screenshot 4 — Item Visible in DynamoDB](./Screenshot%204%20%E2%80%94%20Item%20Visible%20in%20DynamoDB\(1\).png)
 
 This screenshot shows the inserted item successfully visible inside the DynamoDB table.
 
