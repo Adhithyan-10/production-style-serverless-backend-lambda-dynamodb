@@ -38,7 +38,7 @@ This project is part of my AWS Cloud & DevOps project-based learning journey foc
 
 # Architecture Workflow
 
-```text id="d1nd0t"
+```text id="41cvzd"
 Frontend/User Request
         ↓
 Amazon API Gateway
@@ -52,7 +52,7 @@ Amazon DynamoDB
 
 # Request Flow
 
-```text id="lxnll0"
+```text id="vjlwmu"
 Client Request
       ↓
 API Gateway
@@ -114,7 +114,7 @@ Learned how API Gateway receives HTTP requests and routes them to AWS Lambda.
 
 A single Lambda function handles all CRUD operations internally using HTTP methods.
 
-```text id="r4by9l"
+```text id="uog1yu"
 POST   → Create
 GET    → Read
 PUT    → Update
@@ -123,7 +123,7 @@ DELETE → Delete
 
 API Gateway routes all requests to the same Lambda function, and the Lambda function separates operations internally using:
 
-```python id="6bsmto"
+```python id="66pfqc"
 event['httpMethod']
 ```
 
@@ -156,7 +156,7 @@ Understood how:
 
 Insert new user data into DynamoDB.
 
-```python id="i1eh7f"
+```python id="5z2vbo"
 table.put_item()
 ```
 
@@ -166,7 +166,7 @@ table.put_item()
 
 Retrieve existing user data.
 
-```python id="r2bww9"
+```python id="mjlwm1"
 table.get_item()
 ```
 
@@ -176,7 +176,7 @@ table.get_item()
 
 Modify existing user information.
 
-```python id="zq2ty8"
+```python id="z13o4d"
 table.update_item()
 ```
 
@@ -186,7 +186,7 @@ table.update_item()
 
 Remove user records from DynamoDB.
 
-```python id="4v13oe"
+```python id="y24i3f"
 table.delete_item()
 ```
 
@@ -202,7 +202,7 @@ The function dynamically processes CRUD operations based on the HTTP request met
 
 # Project Folder Structure
 
-```text id="1s6g4l"
+```text id="zrm7jp"
 production-style-serverless-backend-lambda-dynamodb/
 │
 ├── README.md
@@ -234,34 +234,42 @@ production-style-serverless-backend-lambda-dynamodb/
     ├── learning-outcomes.md
     ├── challenges-faced.md
     ├── future-improvements.md
-    └── project-presentation.pdf
+    └── project-Doc.pdf
 ```
 
 ---
 
 # Screenshots
 
-## DynamoDB Table Created
+Project implementation screenshots are available inside the `screenshots/` folder.
 
-![DynamoDB Table](./screenshots/Screenshot%201%20%E2%80%94%20DynamoDB%20Table%20Created\(1\).png)
+Included screenshots:
 
----
-
-## Lambda Function Overview
-
-![Lambda Function](./screenshots/Screenshot%202%20%E2%80%94%20Lambda%20Function%20Overview\(1\).png)
-
----
-
-## Lambda Test Success
-
-![Lambda Test](./screenshots/Screenshot%203%20%E2%80%94%20Lambda%20Test%20Success\(1\).png)
+* DynamoDB table creation
+* Lambda function configuration
+* Lambda testing
+* DynamoDB inserted item validation
 
 ---
 
-## Item Visible in DynamoDB
+# Documentation
 
-![DynamoDB Item](./screenshots/Screenshot%204%20%E2%80%94%20Item%20Visible%20in%20DynamoDB\(1\).png)
+Detailed project explanations are available inside the `docs/` folder.
+
+Documentation includes:
+
+* project overview
+* architecture explanation
+* concepts learned
+* challenges faced
+* future improvements
+* detailed project presentation PDF
+
+Documentation File:
+
+```text id="2zz9yt"
+project-Doc.pdf
+```
 
 ---
 
@@ -295,7 +303,7 @@ Initially confusing how one Lambda function handles multiple operations.
 
 Understood that Lambda separates CRUD workflows internally using:
 
-```python id="xfyvgv"
+```python id="03lt6r"
 event['httpMethod']
 ```
 
@@ -307,7 +315,7 @@ One of the biggest learnings from this project was understanding the difference 
 
 ## Traditional Backend Architecture
 
-```text id="v5awry"
+```text id="67gncx"
 Frontend
    ↓
 Backend Server
@@ -319,7 +327,7 @@ and
 
 ## Modern Serverless Architecture
 
-```text id="ok2sbq"
+```text id="xuqm2w"
 S3 + CloudFront
         ↓
 API Gateway
@@ -347,21 +355,6 @@ Potential future production-level enhancements:
 * Separate Lambda functions for each CRUD operation
 * Advanced request validation
 * Multi-environment deployment
-
----
-
-# Documentation
-
-Detailed project explanations are available inside the `docs/` folder.
-
-The documentation includes:
-
-* project overview
-* architecture explanation
-* concepts learned
-* challenges faced
-* future improvements
-* project presentation PDF
 
 ---
 
