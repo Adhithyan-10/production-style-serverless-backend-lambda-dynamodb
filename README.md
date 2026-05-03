@@ -267,9 +267,7 @@ Documentation includes:
 
 Documentation File:
 
-```text id="2zz9yt"
-project-Doc.pdf
-```
+[Project Documentation](./docs/project-Doc.pdf)
 
 ---
 
